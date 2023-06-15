@@ -5,7 +5,7 @@ import MainScreen from "./MainScreen";
 export default function LandingPage() {
   return (
     <div className="container-fluid">
-      <div className="main-screen wrapper">
+      <div className="main-screen wrapper" id="main-screen">
         <MainScreen />
       </div>
       <div className="about-us-section wrapper" id="about-us-section">

@@ -6,7 +6,12 @@ export default function MainScreen() {
     <div>
       <nav className="navbar navbar-dark navbar-expand-lg fixed-top">
         <div className="container-fluid">
-          <a className="nav-link" aria-current="page" href="#" title="Home">
+          <a
+            className="nav-link"
+            aria-current="page"
+            href="#main-screen"
+            title="Home"
+          >
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/923/original/logo.png?1686855841"
               alt="logo"
@@ -73,9 +78,7 @@ export default function MainScreen() {
           </div>
         </div>
       </nav>
-      <section className="home">
-        Hello from Homepage
-      </section>
+      <section className="home">Hello from Homepage</section>
     </div>
   );
 }
