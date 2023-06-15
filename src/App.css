@@ -1,7 +1,81 @@
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+}
+:root {
+  --accent-font: "Cinzel", serif;
+  --main-font: "Montserrat", sans-serif;
+  --white: #eef2db;
+  --black: #191a1d;
+  --accent: ##c7d68b;
 }
 
+body {
+  background-color: #191a1d;
+}
+
+.App {
+  background-color: #191a1d;
+  color: aliceblue;
+  margin: 0 auto;
+}
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #7885a3;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-screen {
+  padding-top: 100px;
+  background-image: linear-gradient(
+      69.61deg,
+      #d9d9d9 -0.92%,
+      #000000 -0.91%,
+      rgba(0, 0, 0, 0.942708) 15.28%,
+      rgba(57, 53, 53, 0) 37.01%
+    ),
+    url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/922/original/main_photo.png?1686855038);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 242px;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+nav {
+  background: rgba(29, 26, 26, 0.29);
+  backdrop-filter: blur(5px);
+}
+nav .logo {
+  max-width: 100px;
+}
+.navbar {
+  padding: 10px 60px;
+}
+.all-options {
+  margin-right: 100px;
+}
+
+.about-us-section {
+  background-color: #3e6064;
+}
+.why-us-section {
+  background-color: #396c3b;
+}
+.services-section {
+  background-color: #788428;
+}
+.form-section {
+  background-color: #845b28;
+}
+.gallery-section {
+  background-color: #3e6064;
+}
+.reviews-section {
+  background-color: #396c3b;
+}
+.address-section {
+  background-color: #788428;
+}
