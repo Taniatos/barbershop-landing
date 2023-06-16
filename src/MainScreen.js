@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./MainPage.css";
 
 export default function MainScreen() {
   return (
@@ -78,7 +79,14 @@ export default function MainScreen() {
           </div>
         </div>
       </nav>
-      <section className="home">Hello from Homepage</section>
+      <section className="home">
+        <h1>ApolloCuts</h1>
+        <p>
+          Unleash and elevate your divine style with our modern grooming
+          techniques. Join us on a stylish journey to discover your inner deity!
+        </p>
+        <button>Book an appointment</button>
+      </section>
     </div>
   );
 }
