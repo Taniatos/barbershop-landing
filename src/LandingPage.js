@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import MainScreen from "./MainScreen";
+import AboutUs from "./AboutUs";
 
 export default function LandingPage() {
   return (
@@ -9,7 +10,7 @@ export default function LandingPage() {
         <MainScreen />
       </div>
       <div className="about-us-section wrapper" id="about-us-section">
-        About us
+        <AboutUs />
       </div>
       <div className="why-us-section wrapper" id="why-us-section">
         Why us

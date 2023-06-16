@@ -1,11 +1,9 @@
-@media (prefers-reduced-motion: no-preference) {
-}
 :root {
   --accent-font: "Cinzel", serif;
   --main-font: "Montserrat", sans-serif;
   --white: #eef2db;
   --black: #191a1d;
-  --accent: ##c7d68b;
+  --accent: #c7d68b;
 }
 
 body {
@@ -24,12 +22,10 @@ body {
   background-color: #7885a3;
 }
 section {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
-.about-us-section {
-  background-color: #3e6064;
-}
+
 .why-us-section {
   background-color: #396c3b;
 }

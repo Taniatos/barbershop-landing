@@ -1,21 +1,11 @@
-:root {
-  --accent-font: "Cinzel", serif;
-  --main-font: "Montserrat", sans-serif;
-  --white: #eef2db;
-  --black: #191a1d;
-  --accent: #c7d68b;
-}
-
 .main-screen {
   padding-top: 100px;
   background-image: linear-gradient(
-      69.61deg,
-      #d9d9d9 -0.92%,
-      #000000 -0.91%,
-      rgba(0, 0, 0, 0.942708) 15.28%,
-      rgba(57, 53, 53, 0) 37.01%
+      90.09deg,
+      rgba(16, 14, 14, 0.4655) 40.26%,
+      rgba(16, 14, 14, 0) 75.54%
     ),
-    url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/922/original/main_photo.png?1686855038);
+    url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/022/original/main_photo2.png?1686923195);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 242px;
@@ -30,9 +20,6 @@ nav {
 nav .logo {
   max-width: 100px;
   margin-right: 50px;
-  @media (max-width: 300px) {
-    display: none;
-  }
 }
 
 .navbar a {
@@ -54,16 +41,12 @@ nav .logo {
 .home h1 {
   font-family: var(--accent-font);
   font-weight: 400;
-  font-size: 90px;
+  font-size: 110px;
   margin-left: 0px;
-  margin-top: 132px;
+  margin-top: 100px;
   margin-bottom: 32px;
   color: var(--white);
   text-shadow: 2px 2px 3px rgba(66, 63, 60, 0.8);
-  @media (max-width: 767px) {
-    font-size: 40px;
-    text-align: center;
-  }
 }
 .home p {
   max-width: 628px;
@@ -71,10 +54,6 @@ nav .logo {
   font-size: 20px;
   line-height: 120%;
   color: var(--white);
-  @media (max-width: 767px) {
-    max-width: 260px;
-    font-size: 24px;
-  }
 }
 .home button {
   margin-top: 60px;
@@ -88,4 +67,38 @@ nav .logo {
 }
 .home button:hover {
   background-color: var(--white);
+}
+
+@media only screen and (max-width: 768px) {
+  .home h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  .home p {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .home h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .home p {
+    max-width: 260px;
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 310px) {
+  nav .logo {
+    display: none;
+  }
+  .home button {
+    padding: 14px 24px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .home p {
+    max-width: 240px;
+    font-size: 18px;
+  }
 }

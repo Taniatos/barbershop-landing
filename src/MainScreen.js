@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import "./MainPage.css";
+import "./MainScreen.css";
 
 export default function MainScreen() {
   return (

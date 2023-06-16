@@ -1,0 +1,65 @@
+.about-us-section {
+  background-color: var(--black);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/043/original/about_us_bgrd.png?1686932932);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2 {
+  font-family: var(--accent-font);
+  color: var(--accent);
+  text-shadow: 2px 2px 3px rgba(66, 63, 60, 0.8);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.about-paragraph {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--white);
+}
+.about-us-photo {
+  max-width: 100%;
+  filter: drop-shadow(2px 2px 3px rgba(43, 41, 40, 0.8));
+  border-radius: 2px;
+}
+.row,
+.col-md {
+  margin: 12px;
+}
+.advantages-grid {
+  margin-top: 52px;
+}
+.advantage-box {
+  border: 1px solid #c7d68b;
+  border-radius: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.advantage-numbers {
+  font-family: var(--accent-font);
+  color: var(--accent);
+  font-weight: 400;
+  font-size: 60px;
+}
+.advantage-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--accent);
+  margin-top: -18px;
+}
+.small-k {
+  font-size: 32px;
+}
+@media only screen and (max-width: 1024px) {
+  .about-us-section {
+    background-image: none;
+  }
+  
+}
