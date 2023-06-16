@@ -2,11 +2,11 @@
   background-color: var(--black);
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/043/original/about_us_bgrd.png?1686932932);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/073/original/about_us_bgrd.png?1686949715);
   background-repeat: no-repeat;
   background-size: cover;
 }
-h2 {
+.AboutUs-style h2 {
   font-family: var(--accent-font);
   color: var(--accent);
   text-shadow: 2px 2px 3px rgba(66, 63, 60, 0.8);
@@ -27,20 +27,28 @@ h2 {
   filter: drop-shadow(2px 2px 3px rgba(43, 41, 40, 0.8));
   border-radius: 2px;
 }
-.row,
-.col-md {
-  margin: 12px;
+.row-about-us {
+  margin-bottom: 12px;
+}
+.col-about-us {
+  margin-bottom: 12px;
 }
 .advantages-grid {
   margin-top: 52px;
 }
 .advantage-box {
   border: 1px solid #c7d68b;
+  background-color: rgba(29, 26, 26, 0.29);
+  backdrop-filter: blur(5px);
   border-radius: 20px;
-  margin-left: 12px;
   margin-right: 12px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 12px;
+  transition: ease-in-out 200ms;
+}
+.advantage-box:hover {
+  transform: scale(1.1);
 }
 .advantage-numbers {
   font-family: var(--accent-font);
@@ -61,5 +69,4 @@ h2 {
   .about-us-section {
     background-image: none;
   }
-  
 }

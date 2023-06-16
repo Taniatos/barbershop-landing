@@ -4,12 +4,12 @@ import "./AboutUs.css";
 
 export default function AboutUs() {
   return (
-    <div>
+    <div className="AboutUs-style">
       <h2>About Us</h2>
       <section>
         <div class="container text-center description-grid">
-          <div class="row">
-            <div class="col-md">
+          <div class="row row-about-us">
+            <div class="col-md col-about-us">
               <p className="about-paragraph">
                 Welcome to ApolloCuts, Kyiv's premier barbershop, where modern
                 style meets exceptional grooming services. Our highly skilled
@@ -19,7 +19,7 @@ export default function AboutUs() {
                 cutting-edge techniques.
               </p>
             </div>
-            <div class="col-md">
+            <div class="col-md col-about-us">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/027/original/about-us-1.png?1686926000"
                 alt="Barbershop Instruments"
@@ -28,8 +28,8 @@ export default function AboutUs() {
               />
             </div>
           </div>
-          <div class="row">
-            <div class="col-md">
+          <div class="row row-about-us">
+            <div class="col-md col-about-us">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/029/original/about-us-2.png?1686926178"
                 alt="Barbershop Interior"
@@ -37,7 +37,7 @@ export default function AboutUs() {
                 title="Barbershop Photo"
               />
             </div>
-            <div class="col-md">
+            <div class="col-md col-about-us">
               <p className="about-paragraph">
                 Located in the heart of Kyiv, ApolloCuts is a sanctuary where
                 men can discover a perfect blend of tradition, innovation, and
@@ -50,7 +50,7 @@ export default function AboutUs() {
           </div>
         </div>
         <div class="container text-center advantages-grid">
-          <div class="row">
+          <div class="row row-about-us">
             <div class="col-md advantage-box">
               <p className="advantage-numbers">7</p>
               <p className="advantage-text">years of experience</p>
