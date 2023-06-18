@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "./WhyUs.css";
-export default function AboutUs() {
+export default function WhyUs() {
   return (
     <div className="WhyUs-style">
       <h2>Why Us?</h2>

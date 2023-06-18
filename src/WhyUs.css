@@ -36,9 +36,7 @@
 .why-us-photo:hover {
   transform: scale(1.1);
 }
-iframe {
-  border-radius: 12px;
-}
+
 .spotify-line {
   margin-top: 100px;
   margin-bottom: 40px;
