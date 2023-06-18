@@ -34,9 +34,19 @@
   transition: ease-in-out 200ms;
 }
 .why-us-photo:hover {
- transform: scale(1.1);
+  transform: scale(1.1);
 }
-
+iframe {
+  border-radius: 12px;
+}
+.spotify-line {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
 @media only screen and (max-width: 1024px) {
   .why-us-section {
     background-image: none;

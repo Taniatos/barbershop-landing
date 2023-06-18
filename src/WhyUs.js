@@ -58,6 +58,18 @@ export default function AboutUs() {
               </p>
             </div>
           </div>
+          <p className="spotify-line">
+            Why don’t you dive into our atmosphere right now?<br/> Here’s the music
+            we listen to in ApolloCuts. Enjoy!
+          </p>
+          <iframe
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1EIhOOrYEwxtia?utm_source=generator&theme=0"
+            width="100%"
+            height="152"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
     </div>
