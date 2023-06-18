@@ -67,6 +67,7 @@ export default function AboutUs() {
             width="100%"
             height="152"
             allowfullscreen=""
+            title="Spotify"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>
