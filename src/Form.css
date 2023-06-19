@@ -1,0 +1,81 @@
+.Form-style {
+  background-color: var(--black);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(199, 214, 139, 0.45) 0%,
+      rgba(207, 225, 133, 0.396) 100%
+    ),
+    url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/365/original/form-bcrd.png?1687193361);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Form-style form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 80px 80px 80px;
+  background-color: var(--black);
+  border-radius: 2px;
+}
+.Form-style h3 {
+  font-family: var(--accent-font);
+  color: var(--accent);
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.name-submit,
+.phone-submit {
+  width: 100%;
+  margin-bottom: 24px;
+  font-weight: 200;
+  font-size: 28px;
+  color: var(--white);
+  background: rgba(238, 242, 219, 0.22);
+  border: 1px solid #c7d68b;
+  border-radius: 12px;
+  padding: 24px;
+}
+.call-button {
+  width: 100%;
+  margin-top: 36px;
+  font-weight: 400;
+  font-size: 28px;
+  color: var(--black);
+  background: var(--accent);
+  box-shadow: 2px 2px 3px rgba(66, 63, 60, 0.8);
+  border-radius: 12px;
+  border: none;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .Form-style {
+    background-image: none;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .Form-style h3 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .Form-style form {
+    padding: 0;
+  }
+  .name-submit,
+  .phone-submit {
+    font-size: 20px;
+    padding: 16px;
+  }
+  .call-button {
+    margin-top: 8px;
+    font-size: 24px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}

@@ -4,6 +4,7 @@ import MainScreen from "./MainScreen";
 import AboutUs from "./AboutUs";
 import WhyUs from "./WhyUs";
 import Services from "./Services";
+import Form from "./Form";
 
 export default function LandingPage() {
   return (
@@ -20,7 +21,9 @@ export default function LandingPage() {
       <div className="services-section wrapper" id="services-section">
         <Services />
       </div>
-      <div className="form-section wrapper">Form</div>
+      <div className="form-section wrapper">
+        <Form />
+      </div>
       <div className="gallery-section wrapper" id="gallery-section">
         Gallery
       </div>
