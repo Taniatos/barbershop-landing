@@ -5,6 +5,7 @@ import AboutUs from "./AboutUs";
 import WhyUs from "./WhyUs";
 import Services from "./Services";
 import Form from "./Form";
+import Gallery from "./Gallery";
 
 export default function LandingPage() {
   return (
@@ -25,7 +26,7 @@ export default function LandingPage() {
         <Form />
       </div>
       <div className="gallery-section wrapper" id="gallery-section">
-        Gallery
+        <Gallery />
       </div>
       <div className="reviews-section wrapper" id="reviews-section">
         Reviews
