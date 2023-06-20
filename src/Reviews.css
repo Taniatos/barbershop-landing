@@ -1,0 +1,48 @@
+.Reviews-style {
+  background-color: var(--accent);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/074/original/why-us-bgrd.png?1686949908);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Reviews-style h2 {
+  font-family: var(--accent-font);
+  color: var(--black);
+  text-shadow: 2px 2px 3px rgba(66, 63, 60, 0.8);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.Reviews-style img {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.icon-left {
+  color: var(--black);
+  font-size: 80px;
+  margin-right: 60px;
+}
+.icon-right {
+  color: var(--black);
+  font-size: 80px;
+  margin-left: 60px;
+}
+.icon-left:hover, .icon-right:hover {
+  color: #4C4E43;
+}
+@media only screen and (max-width: 1024px) {
+  .Reviews-style {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .icon-left, .icon-right {
+    display: none;
+  }
+  .Reviews-style img {
+    max-width: 90%;
+  }
+}

@@ -6,6 +6,7 @@ import WhyUs from "./WhyUs";
 import Services from "./Services";
 import Form from "./Form";
 import Gallery from "./Gallery";
+import Reviews from "./Reviews";
 
 export default function LandingPage() {
   return (
@@ -29,7 +30,7 @@ export default function LandingPage() {
         <Gallery />
       </div>
       <div className="reviews-section wrapper" id="reviews-section">
-        Reviews
+        <Reviews />
       </div>
       <div className="address-section wrapper" id="address-section">
         Address
