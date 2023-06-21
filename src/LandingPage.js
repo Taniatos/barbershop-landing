@@ -7,6 +7,7 @@ import Services from "./Services";
 import Form from "./Form";
 import Gallery from "./Gallery";
 import Reviews from "./Reviews";
+import Location from "./Location";
 
 export default function LandingPage() {
   return (
@@ -33,7 +34,7 @@ export default function LandingPage() {
         <Reviews />
       </div>
       <div className="address-section wrapper" id="address-section">
-        Address
+        <Location />
       </div>
       <footer className="wrapper">Footer</footer>
     </div>
