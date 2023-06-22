@@ -56,7 +56,12 @@ export default function Form() {
   return (
     <div className="Form-style">
       <section>
-        <form className="form-box" onSubmit={handleSubmit} data-netlify="true">
+        <form
+          className="form-box"
+          onSubmit={handleSubmit}
+          method="POST"
+          data-netlify="true"
+        >
           <h3>Let's get in touch!</h3>
           <input
             type="text"
