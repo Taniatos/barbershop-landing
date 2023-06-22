@@ -54,6 +54,7 @@ nav .logo {
   font-size: 20px;
   line-height: 120%;
   color: var(--white);
+  margin: 0 auto;
 }
 .home button {
   margin-top: 60px;
@@ -69,7 +70,7 @@ nav .logo {
   background-color: var(--white);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .home h1 {
     font-size: 48px;
     text-align: center;
@@ -80,17 +81,21 @@ nav .logo {
 }
 @media only screen and (max-width: 520px) {
   .home h1 {
-    font-size: 40px;
+    font-size: 52px;
     text-align: center;
   }
   .home p {
     max-width: 260px;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 320px) {
   nav .logo {
     display: none;
+  }
+  .home h1 {
+    font-size: 40px;
+    text-align: center;
   }
   .home button {
     padding: 14px 24px;
