@@ -57,6 +57,39 @@
 .call-button:hover {
   background-color: var(--white);
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 26, 26, 0.29);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  max-width: 580px;
+  text-align: center;
+  padding: 200px 60px;
+  font-family: var(--accent-font);
+  color: var(--accent);
+  font-size: 24px;
+  background: var(--black);
+  border-radius: 12px;
+}
+.name-submit.invalid,
+.phone-submit.invalid {
+  border: 1px solid #B63030;
+}
+.error-message {
+  color: #B63030;
+  font-size: 14px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
 
 @media only screen and (max-width: 767px) {
   .Form-style {
