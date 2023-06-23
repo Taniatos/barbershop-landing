@@ -82,6 +82,7 @@ export default function LandingPage() {
           href="https://www.behance.net/0031c316"
           className="design-link"
           target="_blank"
+          rel="noreferrer"
         >
           designed
         </a>{" "}
@@ -90,6 +91,7 @@ export default function LandingPage() {
           href="https://github.com/Taniatos"
           className="github-link"
           target="_blank"
+          rel="noreferrer"
         >
           built
         </a>{" "}
