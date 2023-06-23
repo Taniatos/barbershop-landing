@@ -56,7 +56,7 @@ nav .logo {
   color: var(--white);
   margin: 0 auto;
 }
-.home button {
+.home a {
   margin-top: 60px;
   background-color: var(--accent);
   box-shadow: 2px 2px 3px rgba(66, 63, 60, 0.8);
@@ -64,9 +64,11 @@ nav .logo {
   padding: 16px 32px;
   font-size: 20px;
   border: none;
+  text-decoration: none;
+  color: var(--black);
   transition: all ease-in-out 300ms;
 }
-.home button:hover {
+.home .main-screen-btn:hover {
   background-color: var(--white);
 }
 

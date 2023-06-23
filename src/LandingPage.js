@@ -8,35 +8,36 @@ import Form from "./Form";
 import Gallery from "./Gallery";
 import Reviews from "./Reviews";
 import Location from "./Location";
+import Footer from "./Footer";
 
 export default function LandingPage() {
   return (
     <div className="container-fluid">
-      <div className="main-screen wrapper" id="main-screen">
+      <div className="main-screen" id="main-screen">
         <MainScreen />
       </div>
-      <div className="about-us-section wrapper" id="about-us-section">
+      <div className="about-us-section" id="about-us-section">
         <AboutUs />
       </div>
-      <div className="why-us-section wrapper" id="why-us-section">
+      <div className="why-us-section" id="why-us-section">
         <WhyUs />
       </div>
-      <div className="services-section wrapper" id="services-section">
+      <div className="services-section" id="services-section">
         <Services />
       </div>
-      <div className="form-section wrapper">
+      <div className="form-section">
         <Form />
       </div>
-      <div className="gallery-section wrapper" id="gallery-section">
+      <div className="gallery-section" id="gallery-section">
         <Gallery />
       </div>
-      <div className="reviews-section wrapper" id="reviews-section">
+      <div className="reviews-section" id="reviews-section">
         <Reviews />
       </div>
-      <div className="address-section wrapper" id="address-section">
+      <div className="address-section" id="address-section">
         <Location />
       </div>
-      <footer className="wrapper">Footer</footer>
+      <Footer/>
     </div>
   );
 }

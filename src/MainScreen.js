@@ -85,7 +85,13 @@ export default function MainScreen() {
           Unleash and elevate your divine style with our modern grooming
           techniques. Join us on a stylish journey to discover your inner deity!
         </p>
-        <button className="pop-up-opener">Book an appointment</button>
+        <a
+          href="#form-section"
+          className="main-screen-btn"
+          title="Booking Button"
+        >
+          Book an appointment
+        </a>
       </section>
     </div>
   );
