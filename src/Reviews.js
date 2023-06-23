@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
@@ -18,24 +18,43 @@ const images = [
 
 export default function Reviews() {
   const [currentImage, setCurrentImage] = useState(0);
+  const touchStartRef = useRef(0);
 
   function handleNextImage() {
-    setCurrentImage(function (prevImage) {
-      return (prevImage + 1) % images.length;
-    });
+    setCurrentImage((prevImage) => (prevImage + 1) % images.length);
   }
 
   function handlePrevImage() {
-    setCurrentImage(function (prevImage) {
-      return prevImage === 0 ? images.length - 1 : prevImage - 1;
-    });
+    setCurrentImage((prevImage) =>
+      prevImage === 0 ? images.length - 1 : prevImage - 1
+    );
+  }
+
+  function handleTouchStart(event) {
+    touchStartRef.current = event.touches[0].clientX;
+  }
+
+  function handleTouchEnd(event) {
+    const touchEnd = event.changedTouches[0].clientX;
+    const touchDiff = touchEnd - touchStartRef.current;
+    const sensitivity = 50;
+
+    if (touchDiff > sensitivity) {
+      handlePrevImage();
+    } else if (touchDiff < -sensitivity) {
+      handleNextImage();
+    }
   }
 
   return (
     <div className="Reviews-style">
       <h2>Reviews</h2>
       <section>
-        <div className="container text-center">
+        <div
+          className="container text-center"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
           <div className="row">
             <div className="col-md">
               <FontAwesomeIcon
@@ -54,6 +73,18 @@ export default function Reviews() {
                 className="icon-right"
                 onClick={handleNextImage}
               />
+              <div className="icons-mobile">
+                <FontAwesomeIcon
+                  icon={faChevronLeft}
+                  className="icon-left-mobile"
+                  onClick={handlePrevImage}
+                />
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className="icon-right-mobile"
+                  onClick={handleNextImage}
+                />
+              </div>
             </div>
           </div>
         </div>

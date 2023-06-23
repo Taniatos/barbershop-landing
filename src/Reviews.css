@@ -36,6 +36,20 @@
 .icon-left:hover, .icon-right:hover {
   color: #4C4E43;
 }
+.icon-left-mobile {
+  color: var(--accent);
+  font-size: 40px;
+  margin-top: 40px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.icon-right-mobile {
+  color: var(--accent);
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 60px;
+  cursor: pointer;
+}
 @media only screen and (max-width: 1024px) {
   .Reviews-style {
     background-image: none;
@@ -44,6 +58,9 @@
 @media only screen and (max-width: 912px) {
   .icon-left, .icon-right {
     display: none;
+  }
+  .icon-left-mobile, .icon-right-mobile {
+    color: var(--black);
   }
   .Reviews-style img {
     max-width: 90%;
