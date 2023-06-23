@@ -19,16 +19,19 @@
 .Reviews-style img {
     max-width: 60%;
     margin: 0 auto;
+    border-radius: 12px;
 }
 .icon-left {
   color: var(--black);
   font-size: 80px;
   margin-right: 60px;
+  cursor: pointer;
 }
 .icon-right {
   color: var(--black);
   font-size: 80px;
   margin-left: 60px;
+  cursor: pointer;
 }
 .icon-left:hover, .icon-right:hover {
   color: #4C4E43;
