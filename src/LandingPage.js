@@ -25,7 +25,7 @@ export default function LandingPage() {
       <div className="services-section" id="services-section">
         <Services />
       </div>
-      <div className="form-section">
+      <div className="form-section" id="form-section">
         <Form />
       </div>
       <div className="gallery-section" id="gallery-section">
@@ -37,7 +37,9 @@ export default function LandingPage() {
       <div className="address-section" id="address-section">
         <Location />
       </div>
-      <Footer/>
+      <div className="footer-section" id="footer-section">
+        <Footer />
+      </div>
     </div>
   );
 }

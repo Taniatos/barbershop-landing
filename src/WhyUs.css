@@ -50,3 +50,8 @@
     background-image: none;
   }
 }
+@media only screen and (max-width: 540px) {
+  .why-us-photo:hover {
+    transform: scale(1);
+  }
+}

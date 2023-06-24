@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-export default function LandingPage() {
+export default function Footer() {
   return (
     <footer>
       <div class="container footer-box">
@@ -17,7 +17,7 @@ export default function LandingPage() {
           <div class="col-md-4 text-center footer-buttons-box">
             <div className="footer-btn-one">
               <a
-                href="why-us-section"
+                href="#form-section"
                 title="Booking Button"
                 className="button-one-footer"
               >

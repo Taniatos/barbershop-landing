@@ -70,3 +70,22 @@
     background-image: none;
   }
 }
+@media only screen and (max-width: 540px) {
+  .AboutUs-style h2 {
+    margin-bottom: 32px;
+  }
+  .about-us-photo-one {
+    display: none;
+  }
+   .about-us-photo-two {
+    margin-top: -28px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .about-paragraph {
+  font-size: 16px;
+}
+.about-us-photo-two {
+    margin-bottom: 20px;
+  }
+}

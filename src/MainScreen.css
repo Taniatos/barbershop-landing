@@ -57,13 +57,21 @@ nav .logo {
   margin: 0 auto;
 }
 .home a {
-  margin-top: 60px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--black);
+}
+.main-screen-btn {
+  max-width: 300px;
+  margin: 60px auto;
+  margin-bottom: -60px;
   background-color: var(--accent);
   box-shadow: 2px 2px 3px rgba(66, 63, 60, 0.8);
   border-radius: 12px;
   padding: 16px 32px;
   font-size: 20px;
   border: none;
+  cursor: pointer;
   text-decoration: none;
   color: var(--black);
   transition: all ease-in-out 300ms;
@@ -107,5 +115,13 @@ nav .logo {
   .home p {
     max-width: 240px;
     font-size: 18px;
+  }
+  .home a {
+    font-size: 14px;
+  }
+  .main-screen-btn {
+    padding-bottom: 12px;
+    padding-top: 10px;
+    max-width: 90%;
   }
 }

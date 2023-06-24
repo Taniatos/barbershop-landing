@@ -41,7 +41,7 @@ footer .footer-btn-one {
   padding-top: 16px;
   padding-bottom: 16px;
   width: 85%;
-
+  cursor: pointer;
   border: none;
   transition: all ease-in-out 300ms;
 }
@@ -49,6 +49,7 @@ footer .footer-btn-one {
   color: var(--black);
   font-size: 20px;
   transition: all ease-in-out 300ms;
+  cursor: pointer;
 }
 footer .footer-btn-one:hover {
   background-color: var(--white);
@@ -95,10 +96,10 @@ footer p {
   }
 }
 @media only screen and (max-width: 820px) {
-  footer .footer-btn-one {
+  footer .footer-btn-one a {
     font-size: 16px;
   }
-  footer .footer-btn-two {
+  footer .footer-btn-two a {
     font-size: 16px;
   }
 }

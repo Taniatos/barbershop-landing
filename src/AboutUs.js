@@ -23,7 +23,7 @@ export default function AboutUs() {
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/027/original/about-us-1.png?1686926000"
                 alt="Barbershop Instruments"
-                className="about-us-photo"
+                className="about-us-photo about-us-photo-one"
                 title="Barbershop Photo"
               />
             </div>
@@ -33,7 +33,7 @@ export default function AboutUs() {
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/029/original/about-us-2.png?1686926178"
                 alt="Barbershop Interior"
-                className="about-us-photo"
+                className="about-us-photo about-us-photo-two"
                 title="Barbershop Photo"
               />
             </div>
