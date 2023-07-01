@@ -15,9 +15,6 @@
   background-position: center;
   padding-top: 100px;
   padding-bottom: 242px;
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 100%;
 }
 nav {
   background: rgba(29, 26, 26, 0.29);
