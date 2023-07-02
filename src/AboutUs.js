@@ -38,7 +38,7 @@ export default function AboutUs() {
               />
             </div>
             <div class="col-md col-about-us">
-              <p className="about-paragraph">
+              <p className="about-paragraph about-paragraph-two">
                 Located in the heart of Kyiv, ApolloCuts is a sanctuary where
                 men can discover a perfect blend of tradition, innovation, and
                 sophistication. With a strong commitment to exceptional service

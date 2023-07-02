@@ -77,15 +77,24 @@
   .about-us-photo-one {
     display: none;
   }
-   .about-us-photo-two {
+  .about-us-photo-two {
     margin-top: -28px;
+  }
+  .about-paragraph-two {
+    margin-top: 18px;
+  }
+  .advantage-box:hover {
+    transform: scale(1);
   }
 }
 @media only screen and (max-width: 280px) {
   .about-paragraph {
-  font-size: 16px;
-}
-.about-us-photo-two {
+    font-size: 16px;
+  }
+  .about-us-photo-two {
     margin-bottom: 20px;
+  }
+  .about-paragraph-two {
+    margin-top: 0px;
   }
 }

@@ -38,7 +38,7 @@ export default function Location() {
               </ul>
             </div>
             <div class="col-md-6 col-hours">
-              <h3>Working hours:</h3>
+              <h3 className="working-hours-header">Working hours:</h3>
               <ul>
                 <li>Mon-Fri: 9:00 - 22:00</li>
                 <li>Sat: 9:00 - 18:00</li>

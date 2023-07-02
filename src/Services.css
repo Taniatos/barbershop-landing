@@ -47,6 +47,9 @@
     margin-top: 4px;
     font-size: 20px;
   }
+  .Services-style .service-text:hover {
+    transform: scale(1);
+  }
   .Services-style .service-box {
     margin-left: 0;
     margin-right: 0;
