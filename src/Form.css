@@ -71,7 +71,7 @@
 }
 
 .popup-content {
-  max-width: 580px;
+  max-width: 100%;
   text-align: center;
   padding: 200px 60px;
   font-family: var(--accent-font);

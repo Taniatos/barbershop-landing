@@ -40,8 +40,8 @@ export default function Form() {
 
       const popupContent = document.createElement("div");
       popupContent.className = "popup-content";
-      popupContent.innerText =
-        "Thanks for your inquiry. We'll call you back shortly!";
+      popupContent.innerText = `Thanks for your query! 
+        We'll call you within 15 minutes`;
 
       popup.appendChild(popupContent);
       document.body.appendChild(popup);
@@ -103,13 +103,3 @@ export default function Form() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
