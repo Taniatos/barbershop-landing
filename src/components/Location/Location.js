@@ -1,9 +1,11 @@
 import React from "react";
-import "./App.css";
+import "./../../App.css";
 import "./Location.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLocationDot} from "@fortawesome/free-solid-svg-icons";
+  faLocationDot
+} from "@fortawesome/free-solid-svg-icons";
+  
 export default function Location() {
   return (
     <div className="Location-style">

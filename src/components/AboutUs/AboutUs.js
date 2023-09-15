@@ -1,8 +1,8 @@
 import React from "react";
-import "./App.css";
+import "./../../App.css";
 import "./AboutUs.css";
 
-export default function AboutUs() {
+const AboutUs = () => {
   return (
     <div className="AboutUs-style">
       <h2>About Us</h2>
@@ -75,3 +75,5 @@ export default function AboutUs() {
     </div>
   );
 }
+
+export default AboutUs

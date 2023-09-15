@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import './../../App.css';
 import "./Form.css";
 
 export default function Form() {
@@ -9,7 +9,7 @@ export default function Form() {
   const [phoneError, setPhoneError] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  function validateName() {
+  const  validateName = () => {
     const nameRegex = /^[A-Za-z ]{2,20}$/;
     if (!nameRegex.test(name.trim())) {
       setNameError("Please enter a valid name");
@@ -32,9 +32,12 @@ export default function Form() {
   function handleSubmit(e) {
     e.preventDefault();
     setFormSubmitted(true);
+    const isNameValid = validateName()
+    const isPhoneValid = validatePhone();
 
-    if (validateName() && validatePhone()) {
+    if (isNameValid && isPhoneValid) {
       // Show the pop-up window
+      //show modal instead of creating divs
       const popup = document.createElement("div");
       popup.className = "popup";
 

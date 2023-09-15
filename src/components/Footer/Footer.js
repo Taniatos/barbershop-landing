@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+
 export default function Footer() {
   return (
     <footer>
@@ -79,7 +80,7 @@ export default function Footer() {
       <p className="text-center built-by">
         This landing page was{" "}
         <a
-          href="https://www.behance.net/0031c316"
+          href="https://www.behance.net/gallery/180087673/BarberShop-Landing-Page-UIUX-Design"
           className="design-link"
           target="_blank"
           rel="noreferrer"

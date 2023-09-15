@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./../../App.css";
 import "./WhyUs.css";
 export default function WhyUs() {
   return (

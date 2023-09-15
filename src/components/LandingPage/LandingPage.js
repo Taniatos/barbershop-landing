@@ -1,14 +1,14 @@
 import React from "react";
-import "./App.css";
-import MainScreen from "./MainScreen";
-import AboutUs from "./AboutUs";
-import WhyUs from "./WhyUs";
-import Services from "./Services";
-import Form from "./Form";
-import Gallery from "./Gallery";
-import Reviews from "./Reviews";
-import Location from "./Location";
-import Footer from "./Footer";
+import "./../../App.css";
+import MainScreen from "../MainScreen/MainScreen";
+import AboutUs from "../AboutUs/AboutUs";
+import WhyUs from "../WhyUs/WhyUs";
+import Services from "../Services/Services";
+import Form from "../Form/Form";
+import Gallery from "../Gallery/Gallery";
+import Reviews from "../Reviews/Reviews";
+import Location from "../Location/Location";
+import Footer from "../Footer/Footer";
 
 export default function LandingPage() {
   return (

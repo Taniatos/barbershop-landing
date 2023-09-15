@@ -4,7 +4,7 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import "./App.css";
+import "./../../App.css";
 import "./Reviews.css";
 
 const images = [
