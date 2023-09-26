@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import './../../App.css';
+import React, { useState, useRef, useEffect } from "react";
+import "./../../App.css";
 import "./Form.css";
 
 export default function Form() {
@@ -8,8 +8,23 @@ export default function Form() {
   const [nameError, setNameError] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const modalRef = useRef(null);
 
-  const  validateName = () => {
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        setShowModal(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [modalRef]);
+
+  const validateName = () => {
     const nameRegex = /^[A-Za-z ]{2,20}$/;
     if (!nameRegex.test(name.trim())) {
       setNameError("Please enter a valid name");
@@ -17,7 +32,7 @@ export default function Form() {
     }
     setNameError("");
     return true;
-  }
+  };
 
   function validatePhone() {
     const phoneRegex = /^\d{5,14}$/;
@@ -32,27 +47,15 @@ export default function Form() {
   function handleSubmit(e) {
     e.preventDefault();
     setFormSubmitted(true);
-    const isNameValid = validateName()
+    const isNameValid = validateName();
     const isPhoneValid = validatePhone();
 
     if (isNameValid && isPhoneValid) {
-      // Show the pop-up window
-      //show modal instead of creating divs
-      const popup = document.createElement("div");
-      popup.className = "popup";
+      setShowModal(true);
 
-      const popupContent = document.createElement("div");
-      popupContent.className = "popup-content";
-      popupContent.innerText = `Thanks for your query! 
-        We'll call you within 15 minutes`;
-
-      popup.appendChild(popupContent);
-      document.body.appendChild(popup);
-
-      // Remove the pop-up after 2,5 seconds
-      setTimeout(function () {
-        document.body.removeChild(popup);
-      }, 2500);
+      setTimeout(() => {
+        setShowModal(false);
+      }, 5000);
     }
   }
 
@@ -102,6 +105,14 @@ export default function Form() {
             disabled={nameError || phoneError}
           />
         </form>
+
+        {showModal && (
+          <div className="popup">
+            <div ref={modalRef} className="popup-content">
+              Thanks for your query! We'll call you within 15 minutes.
+            </div>
+          </div>
+        )}
       </section>
     </div>
   );
